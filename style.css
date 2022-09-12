@@ -42,10 +42,10 @@ nav ul li a{
     transition: 0.6s;
 }
 nav ul li a:hover{
-    background-color: rgba(54, 53, 53, 0.041);
+    background-color: rgba(54, 53, 53, 0.007);
     bottom: 0;
-    border-bottom: rgb(255, 255, 255) solid;
-    border-left: rgb(255, 255, 255) solid;
+    border-bottom: rgba(255, 255, 255, 0.76) solid;
+    border-left: rgba(255, 255, 255, 0.76) solid;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -91,6 +91,9 @@ nav ul li a:hover{
 }
 .illu:hover{
     transform: scale(1.05);
+    border-bottom: rgba(255, 255, 255, 0.76) solid;
+    border-left: rgba(255, 255, 255, 0.76) solid;
+    border-width: 7px;
 }
 button{
     transition: 0.5s;
