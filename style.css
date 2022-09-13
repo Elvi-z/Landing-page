@@ -169,11 +169,11 @@ button:hover{
 }
 .scnd1 div{
     height: fit-content;
-    width: 30vh;
+    width: 15%;
 }
 .scnd1 div img{
     height: 30vh;
-    width: 30vh;
+    width: 80%;
     border-radius: 20px;
     margin-bottom: 40px;
     transition: 0.2s;
