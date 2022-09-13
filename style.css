@@ -174,3 +174,87 @@ button:hover{
     color: rgba(255, 255, 255, 0.76);
     font-style: italic;
 }
+.quote{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(139, 139, 139, 0.76);
+}
+.quote div{
+    width: 80vh;
+    text-align: right;
+    font-family: cursive;
+    color: rgb(83, 84, 85);
+    margin-top: 20px;
+}
+cite{
+    font-size: 30px;
+}
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+    font-size: 20px;
+    font-style: italic;
+}
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+/*blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    /*float:right;
+    font-size:6em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+blockquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+}
+blockquote cite:before {
+    content: "\2013";
+}*/
+.snr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(83, 84, 85);
+}
+.snr div{
+    display: flex;
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.76);
+    justify-content: space-between;
+    align-items: center;
+}
+.snr div button{
+    align-items: center;
+    margin: 30px;
+    margin-right: 100px;
+}
+.ab{
+    display: inline-block !important;
+    width: fit-content !important;
+    margin-left: 100px;
+    text-align: left !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: rgb(83, 84, 85);
+}
