@@ -278,6 +278,7 @@ blockquote cite:before {
     height: 14vh;
     color: rgb(83, 84, 85);
     background-color: black;
+    width: 100%;
 }
 @media(max-width:1000px){
     .hamburger{
@@ -339,7 +340,7 @@ blockquote cite:before {
         border-bottom-right-radius: 10px;
     }
 }
-@media(max-width:400px){
+@media(max-width:900px){
     .container{
         background-image: url(img/frnds.jpg);
         background-repeat: no-repeat;
@@ -355,19 +356,15 @@ blockquote cite:before {
         padding: 0.7em;
         font-size: small;
     }
-    .illu{
-        display: block;
-        position: inherit;
-        width: 100px;
-        height: 100px;
-    }
     .wlc{
-        display: inline-block;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        flex-direction: column;
+        align-items: space-around;
     }
     .pedi{
         display: inline-block;
-        margin-right: 400px;
         margin-top: 170px;
         height: fit-content;
         text-align: center;
@@ -380,6 +377,18 @@ blockquote cite:before {
         font-family: 'Rubik Microbe', cursive;
         margin-bottom: 10px;
     }
+    .illu{
+        display: block;
+        position: initial;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        margin-left: 90px;
+        border-radius: 10px;
+    }
+    .illu:hover{
+        border: none;
+    }
     nav img{
         margin-left: 10px;
     }
@@ -391,14 +400,25 @@ blockquote cite:before {
 
     }
     .scnd1{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .scnd1 div{
+        height: 40px;
+        width: fit-content;
         text-align: center;
-        margin-left: 35px;
-        margin-top: 20px;
+        margin: 50px;
     }
     .scnd1 div img{
-        width: 20vh;
-        height: 20vh;
+        width: 15vh;
+        height: 15vh;
+    }
+    .scnd{
+        height: 145vh;
+        width: 100%;   
     }
     .scndh{
         font-size: large;
@@ -409,9 +429,11 @@ blockquote cite:before {
     .quote{
         height: 50vh;
         font-size: medium;
+        width: 100%;
     }
     .snr div{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         width: 70%;
         height: 50%;
         border-radius: 10px;
