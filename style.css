@@ -258,11 +258,3 @@ blockquote cite:before {
     background-color: rgba(0, 0, 0, 0) !important;
     color: rgb(83, 84, 85);
 }
-.ft{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 14vh;
-    color: rgb(83, 84, 85);
-    background-color: black;
-}
