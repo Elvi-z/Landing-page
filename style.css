@@ -383,7 +383,7 @@ blockquote cite:before {
         width: 100px;
         height: 100px;
         margin: 20px;
-        margin-left: 60%;
+        margin-left: 50%;
         border-radius: 10px;
     }
     .illu:hover{
@@ -439,18 +439,29 @@ blockquote cite:before {
         border-radius: 10px;
         background-color: rgba(255, 255, 255, 0.76);
     }
+    .snr{
+        height: 30vh;
+    }
     .snr div button{
         align-items: center;
         margin-bottom: 50px;
-        margin-right: 100px;
+        margin-left: 20px;
     }
     .ab{
         display: inline-block !important;
         width: fit-content !important;
-        margin-left: 100px;
+        height: fit-content;
+        margin-left: 5px;
+        margin-top: 10px;
         text-align: left !important;
         background-color: rgba(0, 0, 0, 0) !important;
         color: rgb(83, 84, 85);
+    }
+    .ab h1{
+        font-size: large;
+    }
+    .ab h3{
+        font-size: small;
     }
     *{
         padding: 0;
@@ -459,6 +470,9 @@ blockquote cite:before {
     body{
         margin: 0;
         padding: 0;
+    }
+    .ft{
+        font-size: small;
     }
     
 }
