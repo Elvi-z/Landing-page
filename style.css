@@ -29,6 +29,19 @@
     margin-top: -30px;
     margin-right: 60px;
 }
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    width: 30px;
+    height: 4px;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: azure;
+}
 nav img{
     height: 60px;
     width: 60px;
@@ -265,4 +278,165 @@ blockquote cite:before {
     height: 14vh;
     color: rgb(83, 84, 85);
     background-color: black;
+}
+@media(max-width:1000px){
+    .hamburger{
+        display: block;
+        float: right;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8.7px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8.7px) rotate(-45deg);
+    }
+    .nav-bar{
+        position: fixed;
+        z-index: 1;
+    }
+    .nav-menu{
+        display: flex;
+        list-style: none;
+        gap: 0px;
+        margin-right: 30px;
+        padding-top: 25px;
+        z-index: 100;
+    }
+    .nav-menu{
+        position: fixed;
+        right: -150%;
+        text-decoration: none;
+        top: 70px;
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.055), rgba(46, 45, 45, 0.411));
+        width: 35%;
+        text-align: center;
+        transition: 0.3s;
+        border-radius: 2%;
+    }
+    .nav-menu.active{
+        right: -10%;
+    }
+    nav ul li a{
+        text-decoration: none;
+        display: block;
+        color: rgba(255, 255, 255, 0.829);
+        transition: 0.3s ease;
+        padding: 0.7em;
+        font-size: medium;
+        width: max-content;
+    }
+    nav ul li a:hover{
+        background-color: rgb(54, 53, 53);
+        bottom: 0;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+@media(max-width:400px){
+    .container{
+        background-image: url(img/frnds.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: fit-content;
+        width: 100%;
+    }
+    nav ul li a{
+        text-decoration: none;
+        display: block;
+        color: rgba(255, 255, 255, 0.829);
+        transition: 0.3s ease;
+        padding: 0.7em;
+        font-size: small;
+    }
+    .illu{
+        display: block;
+        position: inherit;
+        width: 100px;
+        height: 100px;
+    }
+    .wlc{
+        display: inline-block;
+        text-align: center;
+    }
+    .pedi{
+        display: inline-block;
+        margin-right: 400px;
+        margin-top: 170px;
+        height: fit-content;
+        text-align: center;
+        max-width: 19vh;
+        font-size: 10px;
+        text-align: center;
+    }
+    .pedi p{
+        color: rgb(241, 241, 241);
+        font-family: 'Rubik Microbe', cursive;
+        margin-bottom: 10px;
+    }
+    nav img{
+        margin-left: 10px;
+    }
+    button{
+        height: 40px;
+        width: 100px;
+        top: 0px;
+        margin-right: 9px;
+
+    }
+    .scnd1{
+        display: inline-block;
+        text-align: center;
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+    .scnd1 div img{
+        width: 20vh;
+        height: 20vh;
+    }
+    .scndh{
+        font-size: large;
+    }
+    .scnd1 div p{
+        font-size: small;
+    }
+    .quote{
+        height: 50vh;
+        font-size: medium;
+    }
+    .snr div{
+        display: inline-block;
+        width: 70%;
+        height: 50%;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.76);
+    }
+    .snr div button{
+        align-items: center;
+        margin-bottom: 50px;
+        margin-right: 100px;
+    }
+    .ab{
+        display: inline-block !important;
+        width: fit-content !important;
+        margin-left: 100px;
+        text-align: left !important;
+        background-color: rgba(0, 0, 0, 0) !important;
+        color: rgb(83, 84, 85);
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
 }
